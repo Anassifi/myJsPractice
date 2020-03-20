@@ -1,0 +1,201 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    font-family: 'Lato', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./background.jpg);
+    background-size: auto 200%;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.game{
+    position: relative;
+    margin-top: 5%;
+    display: inline-block;
+    width: 60vw;
+    height: 80vh;
+    background-color: white;
+}
+
+.active {
+    background-color: whitesmoke;
+}
+
+.active .player__name {
+    font-weight: 400;
+}
+
+.active .player__name::after {
+    content: "\2022";
+    font-size: 1em;
+    position: absolute;
+    color: #EB4D4D;
+    top: 3.8em;
+    right: 5rem;
+}
+
+.player0 {
+    position: relative;
+    width: 30vw;
+    height: 80vh;
+    /* text-align: center; */
+}
+
+.player1 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 30vw;
+    height: 80vh;
+   /*  text-align: center; */
+}
+
+.current {
+    margin: auto;
+    position: absolute;
+    top: 70%;
+    left: 37%;
+    width: 25%;
+    height: 15%;
+    background-color: orangered;
+    text-align: center;
+}
+
+.player__name{
+    font-size: 30px;
+    font-weight: 100;
+    padding-top: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: gray;
+}
+
+
+.player__score {
+    font-weight: 100;
+    font-size: 60px;
+    padding-top: 5%;
+    color: orangered;
+}
+
+.current__score {
+    margin-top: 10%;
+    font-size: .6em;
+    text-transform: uppercase;
+}
+
+.current__total{
+    color: white;
+    font-weight: 300;
+    margin-top: 5%;
+    font-size: 30px;
+}
+
+#new-game {
+    font-size: 1em;
+    text-transform: uppercase;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 45%;
+    margin-top: 5%;
+    color: grey;
+    border: none;
+    cursor: pointer;
+    background: none;
+    outline: none;
+}
+
+#new-game:hover {
+    color: orangered;
+    font-size: 1.1em;
+    text-shadow: 1px 1px 8px black;
+}
+
+#roll-dice {
+    font-size: 1em;
+    text-transform: uppercase;
+    display: inline-block;
+    position: absolute;
+    top: 60%;
+    left: 45%;
+    margin-top: 5%;
+    color: grey;
+    border: none;
+    cursor: pointer;
+    background: none;
+    outline: none;
+}
+
+#roll-dice:hover {
+    color: orangered;
+    font-size: 1.1em;
+    text-shadow: 1px 1px 8px black;
+}
+
+#hold {
+    font-size: 1em;
+    text-transform: uppercase;
+    display: inline-block;
+    position: absolute;
+    top: 70%;
+    left: 48%;
+    margin-top: 5%;
+    color: grey;
+    border: none;
+    cursor: pointer;
+    background: none;
+    outline: none;
+}
+
+#hold:hover {
+    color: orangered;
+    font-size: 1.1em;
+    text-shadow: 1px 1px 8px black;
+}
+
+.plus {
+    position: relative;
+    top: .3em;
+    right: .6em;
+    width: 1.2em;
+}
+
+.refresh {
+    position: relative;
+    top: .3em;
+    right: .6em;
+    width: 1.2em;
+}
+
+.hold{
+    position: relative;
+    top: .3em;
+    right: .6em;
+    width: 1.2em;
+}
+
+.dice {
+    height:4em;
+    width: 4em;
+    position: absolute;
+    top: 35%;
+    right: 46%;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.10);
+}
+
+.winner {
+    background-color: #f7f7f7;
+}
+.winner .player__name {
+    font-weight: bold; color: #EB4D4D;
+}

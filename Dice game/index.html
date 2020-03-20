@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100i,300,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Pig dice</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="game">
+            <div class="player0 active">
+                <h3 class="player__name" id="name-0">player 1</h3>
+                <h1 class="player__score" id="score-0">47</h1>
+                <div class="current">
+                    <h4 class="current__score">current</h4>
+                    <h3 class="current__total" id="current-0">0</h3>
+                </div>
+            </div>
+            <div class="player1">
+                <div class="current">
+                    <h4 class="current__score">current</h4>
+                    <h3 class="current__total" id="current-1">0</h3>
+                </div>
+                <h3 class="player__name" id="name-1">player 2</h3>
+                <h1 class="player__score" id="score-1">65</h1>
+            </div>
+            <div>
+                <img class="dice" src="./dice-5.png" alt="dice">
+            
+            <button id="new-game"><img class="plus" src="./icons/plus.svg" alt="plus">new game</button>
+            <button id="roll-dice"><img class="refresh" src="./icons/refresh.svg" alt="refresh">roll dice</button>
+            <button id="hold"><img class="hold" src="./icons/download.svg" alt="hold">hold</button>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="https://use.fontawesome.com/f6df09b5ae.js"></script> -->
+    <script src="app.js"></script>
+</body>
+</html>
